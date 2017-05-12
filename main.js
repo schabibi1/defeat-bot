@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var mail_address = 'szzazmzzplzzzez@szazzmzpzzzlze.zzcozmz';
-  var mail_address2 = mailadd.replace(/z/g,'');
+  var mail_address2 = mail_address.replace(/z/g,'');
 
   var mail_address2, subject, body, hiddenData;
   var sendmail = document.getElementById('mail');
