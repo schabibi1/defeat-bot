@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>send emails</title>
+  <!-- external libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ </head>
+
+ <body>
+
+   <script type="text/javascript">
+    $(document).ready(function() {
+    var mail_address = 'szzazmzzplzzzez@szazzmzpzzzlze.zzcozmz';
+    var mail_address2 = mailadd.replace(/z/g,'');
+
+    var mail_address2, subject, body, hiddenData;
+    var sendmail = document.getElementById('mail');
+
+    sendmail.onclick = function() {
+      hiddenData = document.getElementById('hidden_data').value;
+      address = mail_address2;
+      subject = 'title';
+      body = 'contents' + hiddenData;
+
+      $('.mail-contact').hide(mail_address2);
+      $('.mail-contact').show('.fa-envelope-o');
+      $('.mail-contact').attr('href','mailto:' + mail_address2 + '?subject=' + subject + '&body=' + body);
+    };
+  });
+   </script>
+ 
+  <div class="mail">
+   <input type='hidden' id='hidden_data' value=''>
+    <a href="" id="mail" class="mail-contact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <!-- Bootstrap JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </body>
+</html>
